@@ -14,5 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-![Each's GitHub stats](https://github-readme-stats.vercel.app/api?username=iach526526&show_icons=true&theme=radical)
 
+<img align="right" width="38%" src="./img/masterSword.jpg"/>
+
+<a href="https://github.com/Giingu"><img width="50%" src="https://github-readme-stats.vercel.app/api?username=iach526526&show_icons=true&theme=radical" alt="GitHub stats"></a>
