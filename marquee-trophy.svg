@@ -1,12 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200">
   <style>
-    .marquee {
-      animation: marqueeAnimation 5s linear infinite;
+    <!-- .marquee1 {
+      animation: marqueeAnimation1 5s linear infinite;
+    } -->
+
+    @keyframes marqueeAnimation1 {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
     }
 
-    @keyframes marqueeAnimation {
+    <!-- .marquee2 {
+      animation: marqueeAnimation2 5s linear infinite;
+    } -->
+
+    @keyframes marqueeAnimation2 {
       0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    <!-- .marquee3 {
+      animation: marqueeAnimation3 5s linear infinite;
+    } -->
+    .marquee {
+      animation: marqueeAnimation3 5s linear infinite;
+    }
+
+    @keyframes marqueeAnimation3 {
+      0% {
+        transform: translateX(0%);
       }
       100% {
         transform: translateX(-100%);
@@ -21,8 +50,21 @@
   </defs>
 
   <g clip-path="url(#clip)">
-    <image class="marquee" href="./img/trophy.svg" x="0" y="0" width="1000" height="200" />
-    <image class="marquee" href="./img/trophy.svg" x="1000" y="0" width="1000" height="200" />
-    <image class="marquee" href="./img/trophy.svg" x="2000" y="0" width="1000" height="200" />
+    <!-- Marquee Content 1 -->
+    <image class="marquee marquee1" href="./img/trophy.svg" x="0" y="0" width="1000" height="200" />
+    <!-- Marquee Content 2 -->
+    <image class="marquee marquee2" href="./img/trophy.svg" x="1000" y="0" width="1000" height="200" />
+    <!-- Marquee Content 3 -->
+    <image class="marquee marquee3" href="./img/trophy.svg" x="2000" y="0" width="1000" height="200" />
   </g>
+    <script type="application/javascript">
+    document.querySelectorAll('.marquee').forEach(image => {
+      image.addEventListener('mouseenter', () => {
+        image.style.animationDuration = '3s';
+      });
+      image.addEventListener('mouseleave', () => {
+        image.style.animationDuration = '5s';
+      });
+    });
+  </script>
 </svg>
