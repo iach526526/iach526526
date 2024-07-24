@@ -1,67 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200">
   <style>
- :root {
-    --marquee-duration: 10s;
-    /* Default animation duration */
+    @keyframes marqueeAnimation1 {0% {transform: translateX(0);} 100% {transform: translateX(-100%);}}
+    @keyframes marqueeAnimation2 {0% {transform: translateX(0);} 100% {transform: translateX(-100%);}}
+    @keyframes marqueeAnimation3 {0% {transform: translateX(0);} 100% {transform: translateX(-100%);}}
+
+.marquee{
+    animation:marqueeAnimation3 10s linear infinite
 }
-@keyframes marqueeAnimation1{
-    0%{
-        transform:translateX(0)
-    }
-    to{
-        transform:translateX(-100%)
-    }
-}
-@keyframes marqueeAnimation2{
-    0%{
-        transform:translateX(0)
-    }
-    to{
-        transform:translateX(-100%)
-    }
-}
-@keyframes marqueeAnimation3{
-    0%{
-        transform:translateX(0)
-    }
-    to{
-        transform:translateX(-100%)
-    }
-}
-.marquee1{
-  display: inline-block;
-  animation:marqueeAnimation3 var(--marquee-duration) linear infinite;
-}
-.marquee2{
-  display: inline-block;
-    animation:marqueeAnimation3 var(--marquee-duration) linear infinite;
-}
-.marquee3{
-  display: inline-block;
-    animation:marqueeAnimation3 var(--marquee-duration) linear infinite;
-}
- 
-  </style>
+   </style>
   <defs>
     <clipPath id="clip">
       <rect width="100%" height="200"/>
     </clipPath>
   </defs>
   <g clip-path="url(#clip)">
-    <image class="marquee marquee1" href="./img/trophy.svg" width="1000" height="200"/>
-    <image class="marquee marquee2" href="./img/trophy.svg" x="1000" width="1000" height="200"/>
-    <image class="marquee marquee3" href="./img/trophy.svg" x="2000" width="1000" height="200"/>
+    <image class="marquee marquee1" href="./img/trophy.svg" width="1000" height="200"
+    style="animation: marqueeAnimation1 10s linear infinite;"/>
+    <image class="marquee marquee2" href="./img/trophy.svg" x="1000" width="1000" height="200"
+    style="animation: marqueeAnimation2 10s linear infinite;"/>
+    <image class="marquee marquee3" href="./img/trophy.svg" x="2000" width="1000" height="200"
+    style="animation: marqueeAnimation3 10s linear infinite;"/>
   </g>
-  <script type="application/javascript">
-      const marquees = document.querySelectorAll('.marquee');
-      marquees.forEach(marquee => {
-        marquee.addEventListener('mouseenter', () => {
-          document.documentElement.style.setProperty('--marquee-duration', '5s');
-        });
-
-        marquee.addEventListener('mouseleave', () => {
-          document.documentElement.style.setProperty('--marquee-duration', '10s');
-        });
-    });
-  </script>
 </svg>
