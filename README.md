@@ -18,4 +18,5 @@
   - CCNA (Cisco Certified Network Associate)
   - IPAS (Industry Professional Assessment System)Information Security Engineer
 
-![svg](./marquee-trophy.svg)
+<!-- 特殊符號需要自元編碼，到https://www.svgviewer.dev/ 執行 opti -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200"><style>@keyframes marqueeAnimation1{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes marqueeAnimation2{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes marqueeAnimation3{0%{transform:translateX(0)}to{transform:translateX(-100%)}}.marquee{animation:marqueeAnimation3 5s linear infinite}</style><defs><clipPath id="clip"><rect width="100%" height="200"/></clipPath></defs><g clip-path="url(#clip)"><image class="marquee marquee1" href="./img/trophy.svg" width="1000" height="200"/><image class="marquee marquee2" href="./img/trophy.svg" x="1000" width="1000" height="200"/><image class="marquee marquee3" href="./img/trophy.svg" x="2000" width="1000" height="200"/></g></svg>
