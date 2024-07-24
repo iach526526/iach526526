@@ -1,18 +1,5 @@
 # Hello World
-<!--
-**iach526526/iach526526** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
 
 <img align="right" width="38%" src="./img/masterSword.jpg" style="margin:0 0 30px 0"/>
 
@@ -32,4 +19,74 @@ Here are some ideas to get you started:
   - IPAS (Industry Professional Assessment System)Information Security Engineer
 
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&rank=-C)](https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&rank=-C)
+<style>
+    .marquee-container {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+    }
+    marquee-content>img {
+      width: 1000px; /* 放大图片到原始尺寸的 5 倍 */
+      height: auto; /* 保持图片比例 */
+    }
+    .marquee-content {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 5s linear infinite;
+    }
+
+    .marquee-content2 {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee2 5s linear infinite;
+    }
+
+    .marquee-content3 {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee2 5s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes marquee2 {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes marquee3 {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+<div class="marquee-container">
+    <!-- add the same img to infinite loop -->
+    <div class="marquee-content">
+        <img src="https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1" alt="trophy">
+    </div>
+    <div class="marquee-content2">
+        <img src="https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1" alt="trophy">
+    </div>
+    <div class="marquee-content3">
+        <img src="https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1" alt="trophy">
+    </div>
+</div>
