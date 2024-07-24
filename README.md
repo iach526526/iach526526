@@ -18,4 +18,4 @@
   - CCNA (Cisco Certified Network Associate)
   - IPAS (Industry Professional Assessment System)Information Security Engineer
 
-![aaa](./marquee-trophy.svg)
+![svg](./marquee-trophy.svg)

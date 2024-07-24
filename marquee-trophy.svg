@@ -1,9 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200">
   <style>
-    <!-- .marquee1 {
-      animation: marqueeAnimation1 5s linear infinite;
-    } -->
-
     @keyframes marqueeAnimation1 {
       0% {
         transform: translateX(0%);
@@ -13,9 +9,6 @@
       }
     }
 
-    <!-- .marquee2 {
-      animation: marqueeAnimation2 5s linear infinite;
-    } -->
 
     @keyframes marqueeAnimation2 {
       0% {
@@ -26,9 +19,7 @@
       }
     }
 
-    <!-- .marquee3 {
-      animation: marqueeAnimation3 5s linear infinite;
-    } -->
+
     .marquee {
       animation: marqueeAnimation3 5s linear infinite;
     }
@@ -51,11 +42,11 @@
 
   <g clip-path="url(#clip)">
     <!-- Marquee Content 1 -->
-    <image class="marquee marquee1" href="./img/trophy.svg" x="0" y="0" width="1000" height="200" />
+    <image class="marquee marquee1" href="https://raw.githubusercontent.com/iach526526/iach526526/286372bc9822cc3734f5700bad13c487d12f698c/img/trophy.svg" x="0" y="0" width="1000" height="200" />
     <!-- Marquee Content 2 -->
-    <image class="marquee marquee2" href="./img/trophy.svg" x="1000" y="0" width="1000" height="200" />
+    <image class="marquee marquee2" href="https://raw.githubusercontent.com/iach526526/iach526526/286372bc9822cc3734f5700bad13c487d12f698c/img/trophy.svg" x="1000" y="0" width="1000" height="200" />
     <!-- Marquee Content 3 -->
-    <image class="marquee marquee3" href="./img/trophy.svg" x="2000" y="0" width="1000" height="200" />
+    <image class="marquee marquee3" href="https://raw.githubusercontent.com/iach526526/iach526526/286372bc9822cc3734f5700bad13c487d12f698c/img/trophy.svg" x="2000" y="0" width="1000" height="200" />
   </g>
     <script type="application/javascript">
     document.querySelectorAll('.marquee').forEach(image => {
