@@ -14,10 +14,10 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<img align="right" width="38%" src="./img/masterSword.jpg"/>
+<img align="right" width="38%" src="./img/masterSword.jpg" style="margin:0 0 30px 0"/>
 
 
-<a href="https://github.com/Giingu"><img width="50%" src="https://github-readme-stats.vercel.app/api?username=iach526526&show_icons=true&theme=radical" alt="GitHub stats"></a>
+<img width="50%" src="https://github-readme-stats.vercel.app/api?username=iach526526&show_icons=true&theme=radical" alt="GitHub stats">
 
 ### 🐱‍👤About me
 
@@ -30,3 +30,6 @@ Here are some ideas to get you started:
 🎓 Certifications:
   - CCNA (Cisco Certified Network Associate)
   - IPAS (Industry Professional Assessment System)Information Security Engineer
+
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&rank=-C)](https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&rank=-C)
