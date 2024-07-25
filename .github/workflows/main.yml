@@ -24,7 +24,7 @@ jobs:
     - name: Base64 encode the modified SVG
       id: base64_encode
       run: |
-        base64 /tmp/trophy_modified.svg > /tmp/trophy_base64.txt
+        base64 /tmp/trophy_modified.svg | tr -d '\n' > /tmp/trophy_base64.txt
 
     - name: Read Base64 content into a variable
       id: read_base64
