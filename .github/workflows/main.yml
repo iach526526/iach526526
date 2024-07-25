@@ -18,8 +18,8 @@ jobs:
     - name: Download SVG file
       run: curl -o /tmp/trophy.svg "https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1"
 
-    - name: Remove lines 741 to 839 from SVG
-      run: sed '761,839d' /tmp/trophy.svg > /tmp/trophy_modified.svg
+    - name: Remove lines 741 to 837 from SVG
+      run: sed '761,837d' /tmp/trophy.svg > /tmp/trophy_modified.svg
 
     - name: Base64 encode the modified SVG
       id: base64_encode
@@ -47,6 +47,7 @@ jobs:
         git config --global user.email 'action@github.com'
         git add img/trophy.svg img/marquee.svg
         git commit -m "Update SVG and marquee.svg every two days"
+        git pull
         git push https://github-actions[bot]:${{ secrets.PAT_TOKEN }}@github.com/iach526526/iach526526.git HEAD:main
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
