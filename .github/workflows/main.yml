@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Download SVG file
-      run: curl -o /tmp/trophy.svg https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1
+      run: curl -o /tmp/trophy.svg "https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1"
 
     - name: Remove lines 490 to 535 from SVG
       run: sed '490,535d' /tmp/trophy.svg > /tmp/trophy_modified.svg
