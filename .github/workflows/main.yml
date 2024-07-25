@@ -14,6 +14,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        ref: 'main'  # Specify the branch to checkout
 
     - name: Download SVG file
       run: curl -o /tmp/trophy.svg "https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1"
@@ -41,7 +43,13 @@ jobs:
     - name: Move modified SVG to img directory
       run: mv /tmp/trophy_modified.svg img/trophy.svg
 
-    - name: Commit and push changes
+    - name: Check for changes
+      id: git-diff
+      run: |
+          git diff --quiet || echo "::set-output name=changes::true"
+      
+    - name: Commit and Push Changes
+      if: steps.git-diff.outputs.changes == 'true'
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
