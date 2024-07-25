@@ -49,4 +49,5 @@ jobs:
         git commit -m "Update SVG and marquee.svg every two days"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        REPO_URL: https://github-actions[bot]:${{ secrets.PAT_TOKEN }}@github.com/iach526526/iach526526.git
