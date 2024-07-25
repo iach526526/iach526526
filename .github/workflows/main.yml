@@ -1,0 +1,52 @@
+name: Update SVG
+
+on:
+  schedule:
+    - cron: '0 0 */2 * *' # 每兩天執行一次
+  push:
+    branches:
+      - main
+
+jobs:
+  update-svg:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Download SVG file
+      run: curl -o /tmp/trophy.svg https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1
+
+    - name: Remove lines 490 to 535 from SVG
+      run: sed '490,535d' /tmp/trophy.svg > /tmp/trophy_modified.svg
+
+    - name: Base64 encode the modified SVG
+      id: base64_encode
+      run: |
+        base64 /tmp/trophy_modified.svg | tr -d '\n' > /tmp/trophy_base64.txt
+
+    - name: Read Base64 content into a variable
+      id: read_base64
+      run: echo "TROPHY_BASE64=$(cat /tmp/trophy_base64.txt)" >> $GITHUB_ENV
+
+    - name: Update marquee.svg with Base64 content
+      run: |
+        BASE64_CONTENT=$(cat /tmp/trophy_base64.txt)
+        sed "s/BASE64_ENCODED_IMAGE_2/$BASE64_CONTENT/g" marquee_template.svg > img/marquee.svg
+
+    - name: Create img directory if not exists
+      run: mkdir -p img
+
+    - name: Move modified SVG to img directory
+      run: mv /tmp/trophy_modified.svg img/trophy.svg
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add img/trophy.svg img/marquee.svg
+        git commit -m "Update SVG and marquee.svg every two days"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
