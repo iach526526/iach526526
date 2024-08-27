@@ -34,8 +34,9 @@ jobs:
 
     - name: Update marquee.svg with Base64 content
       run: |
-        BASE64_CONTENT=$(cat /tmp/trophy_base64.txt)
-        sed "s/BASE64_ENCODED_IMAGE_2/$BASE64_CONTENT/g" marquee_template.svg > img/marquee.svg
+        BASE64_CONTENT=$(cat /tmp/trophy_base64.txt | sed 's/[&/\]/\\&/g')
+        sed -e "s/BASE64_ENCODED_IMAGE_2/$BASE64_CONTENT/g" marquee_template.svg > img/marquee.svg
+        echo $BASE64_CONTENT
 
     - name: Create img directory if not exists
       run: mkdir -p img
