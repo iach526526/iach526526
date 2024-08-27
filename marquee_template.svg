@@ -13,8 +13,8 @@
     }
   </style>
   <g clip-path="url(#clip)">
-    <image class="marquee" href="data:image/svg+xml;base64,BASE64_ENCODED_IMAGE_2" width="2000" height="400"/>
-    <image class="marquee" href="data:image/svg+xml;base64,BASE64_ENCODED_IMAGE_2" x="1000" width="2000" height="400"/>
-    <image class="marquee" href="data:image/svg+xml;base64,BASE64_ENCODED_IMAGE_2" x="2000" width="2000" height="400"/>
+    <image class="marquee" width="1000" height="200" x="2000" href="data:image/svg+xml;base64,BASE64_ENCODED_IMAGE_2"/>
+    <image class="marquee" width="1000" height="200" x="2000" href="data:image/svg+xml;base64,BASE64_ENCODED_IMAGE_2"/>
+    <image class="marquee" width="1000" height="200" x="2000" href="data:image/svg+xml;base64,BASE64_ENCODED_IMAGE_2"/>
   </g>
 </svg>
