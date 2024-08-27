@@ -22,4 +22,4 @@
 
 
 
-![trophy](./trophy.svg)
+![trophy](./img/marquee.svg)
