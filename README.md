@@ -15,7 +15,7 @@
 ----
 
 🎓 Certifications:
-  - CCNA (Cisco Certified Network Associate)
+  - [CCNA (Cisco Certified Network Associate)](https://cp.certmetrics.com/cisco/en/public/verify/credential/f49eb3650c284ceaa73beb6efa57e8ea)
   - IPAS (Industry Professional Assessment System)Information Security Engineer
 
 
