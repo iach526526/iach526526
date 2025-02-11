@@ -8,8 +8,7 @@
 
 ### 🐱‍👤About me
 
-✨ I enjoy exploring new technologies and improving my skills, solving various problems. Now I am working in [SCAICT](https://github.com/SCAICT)
-
+✨ I am a 18y student from Taiwan. I enjoy exploring new technologies and improving my skills, solving problems in life. 
 🎮 Playing Nintendo for three years. I like the legend of zelda and Pokemon series.
 
 ----
@@ -17,6 +16,7 @@
 🎓 Certifications:
   - [CCNA (Cisco Certified Network Associate)](https://cp.certmetrics.com/cisco/en/public/verify/credential/f49eb3650c284ceaa73beb6efa57e8ea)
   - IPAS (Industry Professional Assessment System)Information Security Engineer
+  - NCC Amateur Radio Operator's Certificate (Call sign: BM4LTB)
 
 
 
