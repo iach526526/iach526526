@@ -11,7 +11,7 @@ Hi there! My name is Each Chen, I am a Creative Technologist from Taichung, Taiw
 
 > Always exploring. Always building.
 ## links
-- [blog✨](www.iach.cc)
+- [blog✨](https://www.iach.cc)
 - [email](mailto:info@iach.cc)
 ----
 
