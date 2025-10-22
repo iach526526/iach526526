@@ -20,10 +20,28 @@ jobs:
     - name: Download SVG file
       run: curl -o /tmp/trophy.svg "https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1"
 
+    - name: Remove lines 8 and 9th row 2 trophy
+      run: |
+        awk '{
+          text = text $0 "\n"
+        }
+        END {
+          n = split(text, a, /width="110"/)
+          if (n > 8) {
+            for (i=1; i<=8; i++) {
+              printf "%s", a[i]
+              if (i < 8) printf "width=\"110\""
+            }
+            print "width=\"110\"</svg>"
+          } else {
+            printf "%s", text
+          }
+        }' /tmp/trophy.svg > /tmp/trophy_modified.svg
+
     - name: Base64 encode the modified SVG
       id: base64_encode
       run: |
-        base64 /tmp/trophy.svg | tr -d '\n' > /tmp/trophy_base64.txt
+        base64 /tmp/trophy_modified.svg | tr -d '\n' > /tmp/trophy_base64.txt
 
     - name: Read Base64 content into a variable
       id: read_base64
@@ -39,7 +57,7 @@ jobs:
       run: mkdir -p img
 
     - name: Move modified SVG to img directory
-      run: mv /tmp/trophy.svg img/trophy.svg
+      run: mv /tmp/trophy_modified.svg img/trophy.svg
 
     - name: Check for changes
       id: git-diff
