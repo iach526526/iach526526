@@ -20,18 +20,18 @@ jobs:
     - name: Download SVG file
       run: curl -o /tmp/trophy.svg "https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1"
 
-    - name: Remove 8th(row 2) trophy
+    - name: Remove 9、10th(row 2) trophy
       run: |
         awk '
         /width="110"/ {count++} 
         {
-          lines[NR]=$0
-          if (count==8 && target==0) target=NR-3
+            lines[NR]=$0
+            if (count==9 && target==0) target=NR-4
         }
         END {
-          if (target==0) target=NR   # 若不到第 8 個，就輸出全部
-          for (i=1; i<=target; i++) print lines[i]
-          print "</svg>"
+            if (target==0) target=NR   # 若不到第 9 個，就輸出全部
+            for (i=0; i<=target; i++) print lines[i]
+            print "</svg>"
         }' /tmp/trophy.svg > /tmp/trophy_modified.svg
 
     - name: Base64 encode the modified SVG
