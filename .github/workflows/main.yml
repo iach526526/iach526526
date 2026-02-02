@@ -18,7 +18,7 @@ jobs:
         ref: 'main'  # Specify the branch to checkout
 
     - name: Download SVG file
-      run: curl -o /tmp/trophy.svg "https://github-profile-trophy.vercel.app/?username=iach526526&theme=radical&row=1"
+      run: curl -o /tmp/trophy.svg "https://github-profile-trophy-tawny.vercel.app/?username=iach526526&theme=radical&row=1"
 
     - name: Remove 9、10th(row 2) trophy
       run: |
