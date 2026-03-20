@@ -8,12 +8,12 @@
 <img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iach526526&theme=radical" alt="GitHub stats">
 
 ## 🐱‍👤About me
-Hi there! My name is Each Chen, I am a Creative Technologist from Taichung, Taiwan. I explore new technologies and build things that make life more efficient — or just more fun.
+Hi there! My name is Each Chen, I am a Creative Technologist major in Applied mathematics from Taichung, Taiwan. I explore new technologies and build things that make life more efficient — or just more fun.
 
-> Always exploring. Always building.
-## links
-- [blog✨](https://www.iach.cc)
-- [email](mailto:info@iach.cc)
+> People who are doing things for fun do things the right way by themselves.
+## Contact me
+- blog: [www.iach.cc](https://www.iach.cc)
+- email: info AT iach.cc
 ----
 
 🎓 Certifications:
